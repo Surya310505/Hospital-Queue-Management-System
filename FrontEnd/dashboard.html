@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Queue Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="loadQueue()">
+
+    <!-- NAVBAR -->
+
+    <div class="navbar">
+        Hospital Queue Dashboard
+    </div>
+
+    <!-- MAIN CONTAINER -->
+
+    <div class="container queue-box">
+
+        <h2>Patient Queue Management</h2>
+
+        <!-- ADD PATIENT FORM -->
+
+        <input type="text"
+               id="patientName"
+               placeholder="Patient Name">
+
+        <input type="text"
+               id="doctorName"
+               placeholder="Doctor Name">
+
+        <!-- EMERGENCY CHECKBOX -->
+
+        <div class="emergency-box">
+
+            <label>
+                <input type="checkbox" id="isEmergency">
+                Emergency Patient
+            </label>
+
+        </div>
+
+        <button onclick="addPatient()">
+            Add To Queue
+        </button>
+
+        <!-- TOTAL PATIENT COUNT -->
+
+        <div class="count-box">
+
+            Total Patients:
+            <span id="patientCount">0</span>
+
+        </div>
+
+        <!-- QUEUE DISPLAY -->
+
+        <div id="queueList"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

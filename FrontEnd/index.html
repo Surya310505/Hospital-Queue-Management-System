@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hospital Queue System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="loadPatientCount()">
+
+    <!-- NAVBAR -->
+
+    <div class="navbar">
+
+        <div class="logo">
+            Hospital Queue System
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="#specialists">Specialists</a>
+            <a href="#doctors">Doctors</a>
+            <a href="#appointments">Appointments</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+            <a href="dashboard.html">Queue</a>
+        </div>
+
+    </div>
+
+
+    <!-- HERO SECTION -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>Smart Hospital Queue Management</h1>
+
+            <p>
+                Reduce waiting time and prioritize emergency patients
+                using intelligent queue management.
+            </p>
+
+            <a href="register.html">
+                <button>Get Started</button>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- TOTAL PATIENTS -->
+
+    <section class="section">
+
+        <h2>Total Patients In Queue</h2>
+
+        <div class="count-card">
+
+            <h1 id="patientCount">0</h1>
+
+            <p>Patients Currently Waiting</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- SPECIALISTS -->
+
+    <section id="specialists" class="section">
+
+        <h2>Hospital Specialists</h2>
+
+        <div class="card-container">
+
+            <div class="info-card">
+                <h3>Cardiology</h3>
+                <p>Heart specialists and emergency cardiac care.</p>
+            </div>
+
+            <div class="info-card">
+                <h3>Neurology</h3>
+                <p>Brain and nervous system treatments.</p>
+            </div>
+
+            <div class="info-card">
+                <h3>Orthopedics</h3>
+                <p>Bone and joint specialists.</p>
+            </div>
+
+            <div class="info-card">
+                <h3>Pediatrics</h3>
+                <p>Healthcare for infants and children.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- DOCTOR MANAGEMENT -->
+
+    <section id="doctors" class="section">
+
+        <h2>Doctor Availability Management</h2>
+
+        <div class="doctor-form">
+
+            <input type="text"
+                   id="doctorName"
+                   placeholder="Doctor Name">
+
+            <input type="text"
+                   id="department"
+                   placeholder="Department">
+
+            <select id="availability">
+
+                <option value="Available">
+                    Available
+                </option>
+
+                <option value="Busy">
+                    Busy
+                </option>
+
+            </select>
+
+            <button onclick="addDoctor()">
+                Add Doctor
+            </button>
+
+        </div>
+
+
+        <!-- DOCTOR LIST -->
+
+        <div id="doctorList"
+             class="card-container">
+
+        </div>
+
+    </section>
+
+
+    <!-- APPOINTMENTS -->
+
+    <section id="appointments" class="section">
+
+        <h2>Create Appointment</h2>
+
+        <div class="doctor-form">
+
+            <input type="text"
+                   id="patientAppointment"
+                   placeholder="Patient Name">
+
+            <select id="appointmentDepartment">
+
+                <option>Cardiology</option>
+                <option>Neurology</option>
+                <option>Orthopedics</option>
+                <option>Pediatrics</option>
+
+            </select>
+
+            <button onclick="createAppointment()">
+                Create Appointment
+            </button>
+
+        </div>
+
+        <div id="appointmentList"
+             class="card-container">
+
+        </div>
+
+    </section>
+
+
+    <!-- LIVE TOKEN STATUS -->
+
+    <section class="section">
+
+        <h2>Live Queue Status</h2>
+
+        <div class="token-box">
+
+            <div class="token-card">
+                <h3>Token #12</h3>
+                <p>General Patient</p>
+            </div>
+
+            <div class="token-card emergency">
+                <h3>Token #13</h3>
+                <p>Emergency Priority</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FEATURES -->
+
+    <section class="section">
+
+        <h2>System Features</h2>
+
+        <div class="card-container">
+
+            <div class="feature-card">
+                <h3>Emergency Priority</h3>
+                <p>Emergency patients are prioritized automatically.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Token Generation</h3>
+                <p>Automatic digital token generation system.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Doctor Availability</h3>
+                <p>Check available doctors in real time.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Appointment Booking</h3>
+                <p>Create appointments department-wise.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

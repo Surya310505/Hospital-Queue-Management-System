@@ -1,0 +1,367 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+}
+
+.navbar{
+    background:#2563eb;
+    color:white;
+    padding:15px 40px;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.container{
+    width:400px;
+    margin:60px auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#2563eb;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:#2563eb;
+    border:none;
+    color:white;
+    font-size:16px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1e40af;
+}
+
+.link{
+    text-align:center;
+    margin-top:15px;
+}
+
+.link a{
+    text-decoration:none;
+    color:#2563eb;
+}
+
+.queue-box{
+    width:700px;
+}
+
+.card{
+    background:#eef4ff;
+    padding:15px;
+    margin-top:10px;
+    border-radius:8px;
+}
+.navbar{
+    background:#2563eb;
+    color:white;
+    padding:20px 50px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    font-size:28px;
+    font-weight:bold;
+}
+
+.nav-btn{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-size:18px;
+}
+
+.hero{
+    height:80vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    background:linear-gradient(to right,#2563eb,#1e40af);
+
+    color:white;
+}
+
+.hero-text{
+    width:700px;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:22px;
+    margin-bottom:30px;
+}
+
+.hero button{
+    width:220px;
+    padding:15px;
+    font-size:20px;
+}
+
+.features{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+
+    margin-top:50px;
+    padding-bottom:50px;
+}
+
+.feature-card{
+    width:300px;
+    background:white;
+
+    padding:30px;
+
+    border-radius:12px;
+
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+
+    text-align:center;
+}
+
+.feature-card h2{
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f7fb;
+}
+
+.navbar{
+    background:#2563eb;
+    color:white;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 50px;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-size:18px;
+}
+
+.hero{
+    height:80vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    background:linear-gradient(to right,#2563eb,#1e40af);
+
+    color:white;
+}
+
+.hero-content{
+    width:700px;
+}
+
+.hero h1{
+    font-size:60px;
+}
+
+.hero p{
+    font-size:22px;
+    margin:20px 0;
+}
+
+button{
+    padding:15px 30px;
+    border:none;
+    background:white;
+    color:#2563eb;
+    font-size:18px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.section{
+    padding:60px;
+    text-align:center;
+}
+
+.card-container{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.info-card,
+.feature-card,
+.doctor-card,
+.token-card{
+    background:white;
+    width:250px;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.available span{
+    color:green;
+    font-weight:bold;
+}
+
+.busy span{
+    color:red;
+    font-weight:bold;
+}
+
+.token-box{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:30px;
+}
+
+.emergency{
+    border:3px solid red;
+}
+.queue-box{
+    width: 700px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.queue-box input{
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.queue-box button{
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.count-box{
+    margin-top: 25px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+#queueList{
+    margin-top: 30px;
+}
+
+.queue-card{
+    background: #f4f7fb;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border-left: 6px solid #2563eb;
+}
+
+.emergency-card{
+    border-left: 6px solid red;
+    background: #fff1f1;
+}
+
+.emergency-box{
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.count-card{
+    background:white;
+    width:300px;
+    margin:auto;
+
+    padding:30px;
+
+    border-radius:12px;
+
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.count-card h1{
+    font-size:60px;
+    color:#2563eb;
+}
+
+.doctor-form{
+    width:500px;
+    margin:auto;
+
+    display:flex;
+    flex-direction:column;
+
+    gap:15px;
+}
+
+.doctor-form input,
+.doctor-form select{
+    padding:12px;
+    font-size:16px;
+}
+
+.doctor-card button{
+    margin-top:10px;
+    margin-right:10px;
+}
+
+
+
+
+
